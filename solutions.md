@@ -1,12 +1,6 @@
-# 🧠 Tkinter Beginner Cheat Sheet – 15 Exercises with Solutions
-
-A set of 15 beginner-friendly Tkinter projects with working solutions. Each solution is designed to reinforce core Tkinter concepts like widgets, layout, and logic.
-
----
 
 ## ✅ Exercise 1: Simple Greeting Label
 
-```python
 import tkinter as tk
 
 root = tk.Tk()
@@ -16,10 +10,8 @@ label = tk.Label(root, text="Hello, Tkinter!")
 label.pack(pady=20)
 
 root.mainloop()
+
 ✅ Exercise 2: Change Label Text on Button Click
-python
-Copy
-Edit
 import tkinter as tk
 
 def change_text():
@@ -33,10 +25,8 @@ button = tk.Button(root, text="Click Me", command=change_text)
 button.pack()
 
 root.mainloop()
+
 ✅ Exercise 3: Input Box Echo
-python
-Copy
-Edit
 import tkinter as tk
 
 def show_name():
@@ -54,10 +44,8 @@ label = tk.Label(root, text="")
 label.pack()
 
 root.mainloop()
+
 ✅ Exercise 4: Radio Button Selector
-python
-Copy
-Edit
 import tkinter as tk
 
 def show_selection():
@@ -75,10 +63,8 @@ label = tk.Label(root, text="")
 label.pack()
 
 root.mainloop()
+
 ✅ Exercise 5: Checkbox Toggle
-python
-Copy
-Edit
 import tkinter as tk
 
 def check_state():
@@ -93,10 +79,8 @@ label = tk.Label(root, text="")
 label.pack()
 
 root.mainloop()
+
 ✅ Exercise 6: Dropdown Menu Display
-python
-Copy
-Edit
 import tkinter as tk
 from tkinter import messagebox
 
@@ -111,10 +95,8 @@ tk.OptionMenu(root, choice, *options).pack()
 tk.Button(root, text="Submit", command=show_choice).pack()
 
 root.mainloop()
+
 ✅ Exercise 7: Simple Login Form (No Auth)
-python
-Copy
-Edit
 import tkinter as tk
 from tkinter import messagebox
 
@@ -134,10 +116,8 @@ tk.Entry(root, textvariable=password, show="*").pack()
 tk.Button(root, text="Login", command=login).pack()
 
 root.mainloop()
+
 ✅ Exercise 8: Clear Entry Button
-python
-Copy
-Edit
 import tkinter as tk
 
 def clear():
@@ -150,10 +130,8 @@ entry.pack()
 tk.Button(root, text="Clear", command=clear).pack()
 
 root.mainloop()
+
 ✅ Exercise 9: Counter App
-python
-Copy
-Edit
 import tkinter as tk
 
 count = 0
@@ -176,10 +154,8 @@ tk.Button(root, text="+", command=increase).pack(side="left")
 tk.Button(root, text="-", command=decrease).pack(side="right")
 
 root.mainloop()
+
 ✅ Exercise 10: Layout with grid()
-python
-Copy
-Edit
 import tkinter as tk
 
 root = tk.Tk()
@@ -193,10 +169,8 @@ tk.Entry(root, show="*").grid(row=1, column=1)
 tk.Button(root, text="Login").grid(row=2, column=0, columnspan=2)
 
 root.mainloop()
+
 ✅ Exercise 11: Change Background Color
-python
-Copy
-Edit
 import tkinter as tk
 
 def change_bg():
@@ -212,10 +186,8 @@ tk.Radiobutton(root, text="Blue", variable=color, value="blue").pack()
 tk.Button(root, text="Apply", command=change_bg).pack()
 
 root.mainloop()
+
 ✅ Exercise 12: Simple Calculator
-python
-Copy
-Edit
 import tkinter as tk
 
 def calculate():
@@ -246,10 +218,8 @@ label_result = tk.Label(root, text="")
 label_result.pack()
 
 root.mainloop()
+
 ✅ Exercise 13: To-Do List Box
-python
-Copy
-Edit
 import tkinter as tk
 
 def add_task():
@@ -268,10 +238,8 @@ listbox = tk.Listbox(root)
 listbox.pack()
 
 root.mainloop()
+
 ✅ Exercise 14: Open a New Window
-python
-Copy
-Edit
 import tkinter as tk
 
 def open_new():
@@ -281,10 +249,8 @@ def open_new():
 root = tk.Tk()
 tk.Button(root, text="Open Window", command=open_new).pack()
 root.mainloop()
+
 ✅ Exercise 15: Basic Form Validator
-python
-Copy
-Edit
 import tkinter as tk
 from tkinter import messagebox
 
